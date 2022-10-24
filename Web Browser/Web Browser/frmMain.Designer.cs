@@ -42,7 +42,7 @@
             this.txtUrl.Name = "txtUrl";
             this.txtUrl.Size = new System.Drawing.Size(1774, 20);
             this.txtUrl.TabIndex = 5;
-            this.txtUrl.Text = "https://dotnetexample.com";
+            this.txtUrl.Text = "https://msn.com";
             this.txtUrl.TextChanged += new System.EventHandler(this.textBoxQuery_TextChanged);
             this.txtUrl.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtUrl_KeyPress);
             // 
