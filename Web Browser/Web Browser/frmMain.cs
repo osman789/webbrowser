@@ -20,6 +20,9 @@ namespace Web_Browser
         public frmMain()
         {
             InitializeComponent();
+            browser = new ChromiumWebBrowser(txtUrl.Text);
+            browser.Dock = DockStyle.Fill;
+            this.pContainer.Controls.Add(browser);
         }
 
         private void textBoxQuery_TextChanged(object sender, EventArgs e)
@@ -39,11 +42,5 @@ namespace Web_Browser
             browser.Load(txtUrl.Text);
         }
 
-        private void FrmMain_Load(object sender, EventArgs e)
-        {
-            browser = new ChromiumWebBrowser(txtUrl.Text);
-            browser.Dock = DockStyle.Fill;
-            this.pContainer.Controls.Add(browser);
-        }
     }   
 }
